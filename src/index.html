@@ -9,5 +9,41 @@
 
 <body>
   <script src="index.js" type="module"></script>
+
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+
+  <textarea name="user-input"> <!-- NO ID NI CLASS-->
+  </textarea>
+
+  <ul> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
+      <li data-testid="word-count"></li> <!-- 1. recuento de palabras -->
+      <li data-testid="character-count"></li> <!-- 2. recuento de caracteres -->
+      <li data-testid="character-no-spaces-count"></li> <!-- 3. recuento de caracteres sin espacios -->
+      <li data-testid="number-count"></li> <!-- 4. recuento de numeros -->
+      <li data-testid="number-sum"></li> <!-- 5. suma total de numeros -->
+      <li data-testid="word-length-average"></li> <!-- 6. longitud media de palabras -->
+
+  <button id="reset-button" onclick="reset()"> 
+  <!-- ?? en js: 
+  function reset() {
+  location.reload();
+  }
+  o
+  document.getElementById('reset-button').addEventListener('click', function() {
+  location.reload();
+  }
+  ??
+  -->
+  Limpiar contenido
+  </button>
+
+  <footer>
+  <p>Milen P. G.</p> 
+  <!-- NO ID, NO NAME, NO CLASS
+  llamar directamente a la etiqueta-->
+  </footer>
+
 </body>
 </html>
