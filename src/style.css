@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    background-color: #D9D9D9;
+    justify-content:center;
+    margin: auto;
+}
+
+header {
+    font-size: 22px;
+    color: #333;
+    text-align: center;  
+
+}
+
+textarea {
+    font-size: 20px;
+    color: #333;
+    border-radius: 20px;
+    border-color: #A6A6A6;
+    padding: 60px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    /* 
+    - position?
+    - cómo hacer para que el sube y baja esté dentro del borde y sea redondo tb?
+    - cómo hacer para cambiar el margen del texto input?*/
+}
+
+button {
+    font-size: 20px;
+    color: #D9D9D9;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    /* 
+    - cómo alinear boton abajo?
+    - cómo sacarle ese sombreado? */
+
+}
+
+ul {
+    display: flexbox;
+    font-size: 18px;
+    color: #333;
+}
+
+.flex-container {
+    justify-content: center;
+
+}
+
+footer {
+    color:#A6A6A6;
+    font-size: 16px;
+    margin: 1rem;
+}
+
+
+/* 
+BUSCAR/REPASAR MÁS ATRIBUTOS DE POSICIÓN!
+
+paleta de colores: 
+#333333 (letra principal y padding button)
+#D9D9D9 (fondo y letra button)
+#A6A6A6 (borde input text y fondo métricas)
+
+caja input de texto:
+- borde gris: #A6A6A6
+- puntas redondeadas
+
+boton refresh
+- puntas redondeadas
+- padding espacioso colo gris oscuro #333333
+- letra color gris claro #D9D9D9

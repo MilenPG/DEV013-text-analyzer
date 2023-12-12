@@ -17,27 +17,28 @@
   <textarea name="user-input"> <!-- NO ID NI CLASS-->
   </textarea>
 
-  <ul> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
-      <li data-testid="word-count"></li> <!-- 1. recuento de palabras -->
-      <li data-testid="character-count"></li> <!-- 2. recuento de caracteres -->
-      <li data-testid="character-no-spaces-count"></li> <!-- 3. recuento de caracteres sin espacios -->
-      <li data-testid="number-count"></li> <!-- 4. recuento de numeros -->
-      <li data-testid="number-sum"></li> <!-- 5. suma total de numeros -->
-      <li data-testid="word-length-average"></li> <!-- 6. longitud media de palabras -->
+  <button id="reset-button" type="button" onclick="reset()"> 
+    <!-- ?? en js: 
+    function reset() {
+    location.reload();
+    }
+    o
+    document.getElementById('reset-button').addEventListener('click', function() {
+    location.reload();
+    }
+    ??
+    -->
+    Limpiar
+    </button>
 
-  <button id="reset-button" onclick="reset()"> 
-  <!-- ?? en js: 
-  function reset() {
-  location.reload();
-  }
-  o
-  document.getElementById('reset-button').addEventListener('click', function() {
-  location.reload();
-  }
-  ??
-  -->
-  Limpiar contenido
-  </button>
+  <ul class="flex-container"> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
+      <li data-testid="word-count">Recuento de palabras</li>
+      <li data-testid="character-count">Recuento de caracteres</li>
+      <li data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
+      <li data-testid="number-count">Recuento de números</li> 
+      <li data-testid="number-sum">Suma total de numeros</li> 
+      <li data-testid="word-length-average">Longitud media de palabras</li> 
+  </ul>
 
   <footer>
   <p>Milen P. G.</p> 
