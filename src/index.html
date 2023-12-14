@@ -9,42 +9,45 @@
 
 <body>
   <script src="index.js" type="module"></script>
+  <div>
 
-  <header>
+    <header>
     <h1>Analizador de texto</h1>
-  </header>
+    </header>
 
-  <textarea name="user-input"> <!-- NO ID NI CLASS-->
-  </textarea>
+    <textarea name="user-input"> 
+    </textarea> <!-- NO ID NI CLASS-->
 
-  <button id="reset-button" type="button" onclick="reset()"> 
-    <!-- ?? en js: 
-    function reset() {
-    location.reload();
-    }
-    o
-    document.getElementById('reset-button').addEventListener('click', function() {
-    location.reload();
-    }
-    ??
-    -->
-    Limpiar
-    </button>
+    <button id="reset-button"> 
+      <!-- ?? en js: 
+      function reset() {
+      location.reload();
+      }
+      o
+      document.getElementById('reset-button').addEventListener('click', function() {
+      location.reload();
+      }
+      ??
+      -->
+      Limpiar
+      </button>
 
-  <ul class="flex-container"> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
-      <li data-testid="word-count">Recuento de palabras</li>
-      <li data-testid="character-count">Recuento de caracteres</li>
-      <li data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
-      <li data-testid="number-count">Recuento de números</li> 
-      <li data-testid="number-sum">Suma total de numeros</li> 
-      <li data-testid="word-length-average">Longitud media de palabras</li> 
-  </ul>
+    <ul class="flex-container"> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
+        <li data-testid="word-count">Recuento de palabras</li>
+        <li data-testid="character-count">Recuento de caracteres</li>
+        <li data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
+        <li data-testid="number-count">Recuento de números</li> 
+        <li data-testid="number-sum">Suma total de numeros</li> 
+        <li data-testid="word-length-average">Longitud media de palabras</li> 
+    </ul>
 
-  <footer>
-  <p>Milen P. G.</p> 
-  <!-- NO ID, NO NAME, NO CLASS
-  llamar directamente a la etiqueta-->
-  </footer>
+    <footer>
+      <p>Milen P. G.</p> 
+      <!-- NO ID, NO NAME, NO CLASS
+      llamar directamente a la etiqueta-->
+      </footer>
+      
+  </div>
 
 </body>
 </html>
