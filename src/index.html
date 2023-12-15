@@ -12,40 +12,31 @@
   <div>
 
     <header>
-    <h1>Analizador de texto</h1>
+      <img src="images/solo-lectura.png"></img>
+      <h1>Analizador de texto</h1>
     </header>
 
     <textarea name="user-input"> 
     </textarea> <!-- NO ID NI CLASS-->
 
     <button id="reset-button"> 
-      <!-- ?? en js: 
-      function reset() {
-      location.reload();
-      }
-      o
-      document.getElementById('reset-button').addEventListener('click', function() {
-      location.reload();
-      }
-      ??
-      -->
-      Limpiar
-      </button>
+      Limpiar contenido
+    </button>
 
     <ul class="flex-container"> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
-        <li data-testid="word-count">Recuento de palabras</li>
-        <li data-testid="character-count">Recuento de caracteres</li>
-        <li data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
-        <li data-testid="number-count">Recuento de números</li> 
-        <li data-testid="number-sum">Suma total de numeros</li> 
-        <li data-testid="word-length-average">Longitud media de palabras</li> 
+      <li class="li-item" data-testid="word-count">Recuento de palabras</li>
+      <li class="li-item" data-testid="character-count">Recuento de caracteres</li>
+      <li class="li-item" data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
+      <li class="li-item" data-testid="number-count">Recuento de números</li> 
+      <li class="li-item" data-testid="number-sum">Suma total de números</li> 
+      <li class="li-item" data-testid="word-length-average">Longitud media de palabras</li> 
     </ul>
 
     <footer>
-      <p>Milen P. G.</p> 
+      <p>&copy; Milen P. G.</p> 
       <!-- NO ID, NO NAME, NO CLASS
       llamar directamente a la etiqueta-->
-      </footer>
+    </footer>
       
   </div>
 
