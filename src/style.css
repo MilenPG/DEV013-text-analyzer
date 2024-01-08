@@ -4,7 +4,8 @@ body {
     height: 100%;
     background-color: #d0e2ee;
     justify-content:center;
-    margin: 0%
+    margin: 0%;
+    /* transform: scale(0.8);*/
 }
 
 div {
@@ -12,8 +13,8 @@ div {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin: 5%;
-    margin-top: 4%;
+    margin: 4%;
+    margin-top: 3%;
     margin-bottom: 0%;
 }
 
@@ -24,7 +25,7 @@ img {
 }
 
 header {
-    margin-top: 4px;
+    margin-top: 0%;
     font-size: 22px;
     color: #232333;
 }
