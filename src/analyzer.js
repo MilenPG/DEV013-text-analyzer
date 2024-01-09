@@ -1,25 +1,29 @@
 const analyzer = {  
 
   getWordCount: (text) => {
-    const wordCount = text.trim().split(/\s+/g).length;
+    /*const wordCount = text.trim().replace(/[.,/#«»¡!$%^&*;:{}[\]=\-_`~()”“"…¿?\s]/g, '').split(/\s+/g).length;
+    return wordCount;*/
+    const word = text.trim().replace(/[.,/#«»¡!$%^&*;:{}[\]=\-_`~()”“"'"…¿?]/g, '').split(/\s+/g);
+    let wordCount = 0;
+    for (let i=0; i<word.length; i++){
+      if (word[i] !== '') {
+        wordCount = word.length;
+      }
+    }
     return wordCount;
-    //por qué me cuenta los espacios como palabras? q hago para que no pase eso?
   },
 
   getCharacterCount: (text) => {
     return text.length;
-    //const characterCount = text.length;
-    //return characterCount;
   },
 
   getCharacterCountExcludingSpaces: (text) => {
-    const characterCountExcludingSpaces = text.replace(/[.,/#¡!$%^&*;:{}[\]=\-_`~()”“"…¿?\s]/g, '').length;
+    const characterCountExcludingSpaces = text.replace(/[.,/#«»¡!$%^&*;:{}[\]=\-_`~()”“"…¿?\s]/g, '').length;
     return characterCountExcludingSpaces;
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
 
   getAverageWordLength: (text) => { 
-    const wordsCharacters = text.replace(/\s+/g, '').trim().length
+    const wordsCharacters = text.replace(/[/#«»¡!$%^&*;:{}[\]=\-_`~()”“"…¿?\s]/g, '').trim().length
     const words = text.trim().split(/\s+/g)
     const textsWords = words.length
     const avarageWordLength = parseFloat((wordsCharacters/textsWords).toFixed(2))
@@ -32,22 +36,16 @@ const analyzer = {
   },
 
   getNumberCount: (text) => {
-    const textArray = text.split(/\s+/g)
+    const textArray = text.trim().split(/\s+/g)
     /*const numberCount = textArray.filter(callback((/^[0-9]+$/)textArray[i])).length
-    return numberCount; */
+    return numberCount;*/
     let numberCount = 0;
     for (let i=0; i <textArray.length; i++) {
-      /*if (textArray[i] !== '') {
+      if (textArray[i] !== '') {
         const number = Number(textArray[i]);
         if (!isNaN(number)) {
           numberCount++
         }
-      }*/
-
-      const number = Number(textArray[i])
-      if (!isNaN(number)) {
-      //numberCount++.toFixed(2)
-        numberCount++
       }
     }
     return numberCount;
@@ -69,6 +67,7 @@ const analyzer = {
   },
 
   getNumberSum: (text) => {
+    //const textArray = text.match(/\b\d+(\.\d+)?\b/g);
     const textArray = text.split(/\s+/g);
     let numberSum = 0;
     for (let i=0; i<textArray.length; i++) {

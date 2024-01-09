@@ -38,10 +38,7 @@ textarea[name="user-input"] {
     border-color: #A6A6A6;
     padding: 20px;
     resize: none;
-    
-    /* 
-    - cómo hacer para que la barra de scroll esté dentro del borde y sea redondo tb?
-    - cómo hacer para cambiar el margen del texto input? o sea que el texto que se escriba empiece al margen? y no en centro?*/
+    /* cómo hacer para que la barra de scroll esté dentro del borde y sea redondo tb?*/
 }
 
 #reset-button {
@@ -56,9 +53,6 @@ textarea[name="user-input"] {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 20px;
-    /* 
-    - cómo alinear boton abajo? : flexbox
-    - cómo sacarle ese sombreado?: border-style none */
 }
 
 ul {
@@ -91,23 +85,3 @@ footer {
     margin-top: 2%;
     margin-bottom: 2px;
 }
-
-
-/* 
-BUSCAR/REPASAR MÁS ATRIBUTOS DE POSICIÓN!
-
-paleta de colores: 
-#232333 (letra h1)
-#333333 (letra principal)
-#D9D9D9 o d0e2ee (fondo)
-#A6A6A6 (borde input text y fondo métricas)
-#ffffff (letra button)
-
-caja input de texto:
-- borde gris: #A6A6A6
-- puntas redondeadas
-
-boton refresh
-- puntas redondeadas
-- padding espacioso color gris oscuro #333333
-- letra color gris claro #D9D9D9 */
