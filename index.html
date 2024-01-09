@@ -12,30 +12,28 @@
   <div>
 
     <header>
-      <img src="images/solo-lectura.png"></img>
+      <img src="images/solo-lectura.png"/>
       <h1>Analizador de texto</h1>
     </header>
 
-    <textarea name="user-input"> 
-    </textarea> <!-- NO ID NI CLASS-->
+    <textarea name="user-input" placeholder="Escribe o inserta tu texto aquí..."></textarea> 
 
     <button id="reset-button"> 
       Limpiar
     </button>
 
-    <ul class="flex-container"> <!-- NINGUNO DE LOS LI: NAME, ID, HIJOS-->
+    <ul class="flex-container">
       <li class="li-item" data-testid="word-count">Recuento de palabras</li>
       <li class="li-item" data-testid="character-count">Recuento de caracteres</li>
-      <li class="li-item" data-testid="character-no-spaces-count">Recuento de caracteres sin espacios</li> 
+      <li class="li-item" data-testid="character-no-spaces-count">Recuento de caracteres sin espacios, ni signos</li> 
+      <li class="li-item" data-testid="word-length-average">Longitud media de palabras</li>
       <li class="li-item" data-testid="number-count">Recuento de números</li> 
       <li class="li-item" data-testid="number-sum">Suma total de números</li> 
-      <li class="li-item" data-testid="word-length-average">Longitud media de palabras</li> 
+      
     </ul>
 
     <footer>
       <p>&copy; Milen P. G.</p> 
-      <!-- NO ID, NO NAME, NO CLASS
-      llamar directamente a la etiqueta-->
     </footer>
       
   </div>
