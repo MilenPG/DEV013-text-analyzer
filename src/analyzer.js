@@ -35,11 +35,19 @@ const analyzer = {
     const textArray = text.split(/\s+/g)
     /*const numberCount = textArray.filter(callback((/^[0-9]+$/)textArray[i])).length
     return numberCount; */
- 
     let numberCount = 0;
     for (let i=0; i <textArray.length; i++) {
-      if ((!isNaN(textArray[i])) && textArray[i].replace(' ', '')) {
-        parseFloat((numberCount++).toFixed(2))
+      /*if (textArray[i] !== '') {
+        const number = Number(textArray[i]);
+        if (!isNaN(number)) {
+          numberCount++
+        }
+      }*/
+
+      const number = Number(textArray[i])
+      if (!isNaN(number)) {
+      //numberCount++.toFixed(2)
+        numberCount++
       }
     }
     return numberCount;
@@ -53,7 +61,7 @@ const analyzer = {
       
     //textArray(i) = (/^[0-9]+$/); {
     //   return numberArray;
-    /*0. Establecer qué es un número (usar regular exp): numeros separados por, NaN para ej: 45hjl62)
+    /*0. Establecer qué es un número (usar regular exp?): numeros separados por, NaN para ej: 45hjl62)
       1. Recorrer string      
       2. Tomar cada elemento que coincida con ser un numero y empujarlo a un array. (con if...)(array.filter)(match regex)
       3. Retornar cantidad de elementos del array creado. (array.length)
@@ -64,19 +72,24 @@ const analyzer = {
     const textArray = text.split(/\s+/g);
     let numberSum = 0;
     for (let i=0; i<textArray.length; i++) {
-      if ((!isNaN(textArray[i])) && textArray[i].replace(' ', '')) {
+      //if ((!isNaN(textArray[i])) && textArray[i].replace(' ', '')) {
+      //numberSum += parseFloat(textArray[i]); 
+      //console.log(textArray[i]);
+      const number = Number(textArray[i]) //para "1.2 jaja 2.5."" no me cuenta el "2.5."
+      //console.log(number);
+      if (!isNaN(number)) {
+        numberSum+= number;
+        
         /*numberSum = parseFloat((textArray).reduce(function (result, element){
         return result+element;
-        }, 0));
-        return (parseFloat(numberSum)); */
-        numberSum += parseFloat(textArray[i]);
+        }, 0)); */
       }
     }
     return numberSum;
   },
     
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-  /*0. Establecer qué es un número (usar regular exp, NaN para ej: 45hjl62)
+  /*0. Establecer qué es un número (usar regular exp?, o for con isNaN para ej: 45hjl62)
       1. Recorrer string
       2. Identificar y almacenar solo los elementos que su valor sea un numero
       3. Almacenar eltos en un array?
