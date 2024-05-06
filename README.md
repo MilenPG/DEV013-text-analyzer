@@ -77,7 +77,7 @@ resultado en tiempo real, a medida que la usuaria escribe su texto:
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en el botón "Limpiar".
 
-![Text analyzer demo](docs\images\analizador_de_texto_en_navegador.png "Text analyzer demo")
+![Text analyzer demo](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/analizador_de_texto_en_navegador.png "Text analyzer demo")
 
 ## 5. Boilerplate
 
@@ -129,7 +129,8 @@ pruebas unitarias para los métodos del objeto `analyzer`.
 
 #### Deploy
 
-Nuestro Analizador de texto está desplegado en la web, gracias a  _Github Pages_.
+Nuestro Analizador de texto está desplegado en la web, gracias a  _Github Pages_:
+https://milenpg.github.io/DEV013-text-analyzer/
 
 ## 6. Diseño
 
@@ -138,12 +139,12 @@ Las decisiones de diseño fueron tomadas con una intención minimalista, buscand
 ### Diseño de baja fidelidad
 
 Si bien la idea original, que se ilustra en el bosquejo a continuación, fue transformándose en el camino, persistieron atributos relativos a la posición de los objetos/cajas y paleta de colores. 
-![Text analyzer draw](docs\images\Text_analyzer_bosquejo.png)
+![Text analyzer draw](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/Text_analyzer_bosquejo.png)
 
 ### Diseño de alta fidelidad
 
 El diseño digital fue elaborado en un tablero de Canva y fue evolucionando con el tiempo, hasta lo que ven hoy.
-![Text analyzer design](docs\images\Text_analyzer_Canva.png)
+![Text analyzer design](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/Text_analyzer_Canva.png)
 
 
 ## 7. Criterios de aceptación mínimos del proyecto
