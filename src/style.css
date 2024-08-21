@@ -40,7 +40,7 @@ textarea[name="user-input"] {
     color: #333;
     border-radius: 30px;
     border-color: #A6A6A6;
-    padding: 1.5%;
+    padding: 1rem;
     margin: 1%;
     resize: none;
     /* cómo hacer para que la barra de scroll esté dentro del borde y sea redondo tb?*/
@@ -55,8 +55,8 @@ textarea[name="user-input"] {
     background-color: #2f78a8;
     border-style: none;
     border-radius: 30px;
-    padding: 2%;
-    margin: 1.2%;
+    padding: 1.2rem;
+    margin: 1.2rem 1.2rem 1.2% 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
