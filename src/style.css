@@ -15,8 +15,7 @@ div {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    margin: 4%;
-    margin-top: 3%;
+    margin: 4em;
     margin-bottom: 0%;
 }
 
@@ -32,6 +31,10 @@ header {
     color: #232333;
 }
 
+h1 {
+    margin-block-start: 0.4em;
+}
+
 textarea[name="user-input"] {
     height: 100px;
     width: 90%;
@@ -43,8 +46,36 @@ textarea[name="user-input"] {
     padding: 1rem;
     margin: 1%;
     resize: none;
-    /* cómo hacer para que la barra de scroll esté dentro del borde y sea redondo tb?*/
+    /* cómo hacer para que la barra de scroll esté dentro del borde y sea redondo tb?*/   
 }
+
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 5.5px;
+    border-radius: 20px;
+  }
+
+    /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+  *::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+    border-radius: 20px;
+  }
+
+  /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background: #6e6e6e;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Cambiamos el fondo cuando esté en active */
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #5e5e5e;
+  }
 
 #reset-button {
     width: 200px;
@@ -60,6 +91,11 @@ textarea[name="user-input"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#reset-button:active {
+    cursor: pointer;
+    background-color: #084e7c;   
 }
 
 ul {
@@ -88,4 +124,13 @@ footer {
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2px;
+}
+
+@media (hover : hover) { 
+    #reset-button:hover {
+        cursor: pointer;
+        background-color: #084e7c;
+        
+    }
+        
 }
